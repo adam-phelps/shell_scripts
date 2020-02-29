@@ -7,7 +7,10 @@ hostnamectl
 top | head -n 2
 
 #View running services
-systemctl status | grep 'service\|slice\|target'
+sudo systemctl status | grep 'service\|slice\|target'
 
 #View last journal entries that may be errors
 journalctl -n 50 | grep -i "error"
+
+#Check what the services are being listended on
+sudo netstat -anp | grep tcp | grep LISTEN
