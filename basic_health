@@ -14,3 +14,6 @@ journalctl -n 50 | grep -i "error"
 
 #Check what the services are being listended on
 sudo netstat -anp | grep tcp | grep LISTEN
+
+#Check disk space and file system types
+df -Th
