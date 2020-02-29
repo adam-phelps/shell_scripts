@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Get System Info
+hostnamectl
+
+#Get CPU/Mem info and load
+top | head -n 2
+
+#View running services
+systemctl status | grep 'service\|slice\|target'
+
+#View last journal entries that may be errors
+journalctl -n 50 | grep -i "error"
