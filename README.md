@@ -1,3 +1,13 @@
 # shell_scripts
 
-Collection of my favorite scripts and commands.
+Central repo for my Linux related scripts and configuration files.
+
+## "linux_env_configs" Folder
+
+Contains neat configs for VIM and SCREEN.
+
+## "scripts" Folder
+
+Contains bash commands and scripts.
+
+
